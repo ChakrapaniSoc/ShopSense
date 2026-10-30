@@ -1,0 +1,10 @@
+[project]
+name = "shopsense"
+version = "1.0.0"
+requires-python = ">=3.11"
+
+[tool.vercel]
+entrypoint = "main:app"
+
+[tool.vercel.scripts]
+build = "npm ci && npm run build"
